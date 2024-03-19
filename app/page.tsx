@@ -5,13 +5,13 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time',
+      label: 'Visit tide Protocol',
+      action: 'link',
+      target: `https://landing.tideprotocol.xyz/`,
     },
     {
-      action: 'tx',
-      label: 'Send Base Sepolia',
-      target: `${NEXT_PUBLIC_URL}/api/tx`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
+      action: 'post',
+      label: 'Know more about tide',
     },
   ],
   image: {
@@ -21,14 +21,14 @@ const frameMetadata = getFrameMetadata({
   input: {
     text: 'Tell me a story',
   },
-  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
+  postUrl: `${NEXT_PUBLIC_URL}/api/test`,
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
+  title: 'tideprotocol.xyz',
+  description: 'Intro to tide',
   openGraph: {
-    title: 'zizzamia.xyz',
+    title: 'tideprotocol.xyz',
     description: 'LFG',
     images: [`${NEXT_PUBLIC_URL}/park-1.png`],
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>silvio.xyz</h1>
     </>
   );
 }
